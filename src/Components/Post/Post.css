@@ -1,0 +1,37 @@
+.homePage-posts{
+    /* background-color: rgb(235, 229, 229); */
+    padding: 10px;
+    border-bottom: solid 0.2px rgb(175, 175, 175);
+    
+}
+.homePage-posts h4{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    font-style:normal;
+}
+
+.article{
+    margin-top: 10px;
+}
+
+.homePage-posts p  span{
+  color: #0B5B98;
+  font-size: 20px;
+}
+
+.homePage-posts p:last-child{
+  color:#0075EB;
+  text-align: right;
+  padding-right: 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+
+
+
+
+

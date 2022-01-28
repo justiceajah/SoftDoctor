@@ -4,6 +4,10 @@ import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
 import Navbar from '../Navbar/Navbar';
+import Post from '../Post/Post';
+import FuturePost from '../Post/FuturePost';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
 export default function Home() {
     return (
@@ -51,6 +55,87 @@ export default function Home() {
                    </div>
 
               </div>
+
+              {/* Recent articles starts here */}
+
+              <div className='articles-recentPosts'>
+                        <div>
+                             <h3> Recent Articles </h3> 
+                
+                            <Post/>
+                            <Post/>
+                            <Post/>
+
+
+                            {/* Post */}
+                        </div>
+
+                        <div>
+                            <h3>  Upcoming Articles/Posts</h3> 
+
+                            <FuturePost/>
+                            <FuturePost/>
+                            <FuturePost/>
+            
+                        </div>
+              </div>
+
+              <div className='view-all'>
+              <button className='read-more-button view'> View All</button>
+              </div>
+
+
+              <div className='popular-div'>
+                  <div className=''>
+                      <h5>Popular Topics</h5>
+                      <div className='topic-containers'>
+                        <p>Study Guides</p>
+                        <p>Web Usability</p>
+                        <p>Interaction Design</p>
+                        <p>Application Design</p>
+                        <p>Business Design Thinking</p>
+                        <p>Responsive Design</p>
+                        <p>Research Methods</p>
+                        <p> Software Testing</p>
+                      </div>
+                  </div>
+                  <div  className=''>
+                      <div className='topic-containers'>
+                        <p>Web Usability</p>
+                        <p>Interaction Design</p>
+                        <p>Application Design</p>
+                        <p>Business Design Thinking</p>
+                        <p>Responsive Design</p>
+                        <p>Research Methods</p>
+                        <p> Software Testing</p>
+                      </div>
+                  </div>
+                  <div  className=''>
+                  <h5>About </h5>
+                      <div className='topic-containers'>
+                        <p>Contact Information</p>
+                        <p>About us</p>
+                        <p>Cookie Declaration</p>
+                        <p>Privacy Policy</p>
+                        
+                      </div>
+                  </div>
+                  <div  className=''>
+                  <h5> Follow us </h5>
+                  <div className='topic-containers'>
+                     <button className='read-more-button view'> Subscribe To Our Newsletter</button>
+                     <button className='social-handles view'><i> <TwitterIcon/></i> <span>Twitter</span> </button>
+                     <button className='social-handles view'> <i><FacebookOutlinedIcon/></i> <span>Facebook</span> </button>
+                     
+                      </div>
+                  </div>
+              </div>
+
+
+            <div className='footer-div'>
+                  <h6>Copyright &copy; 2022</h6>
+            </div>
+                        
         </div>
     )
 }

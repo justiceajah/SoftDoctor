@@ -146,7 +146,6 @@ Home page Image starts here */
 .read-more-button{
     position: relative;
     padding: 10px;
-    background-color: #0075EB;
     border: none;
     font-size: large;
     color: white;
@@ -154,4 +153,153 @@ Home page Image starts here */
     margin: auto;
     font-weight: 600;
     background-color: #0D52A1;
+}
+
+
+.articles-recentPosts{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    margin: auto;
+    width: 93%;
+    height: 29px;
+    top: 90px;
+    text-align: left;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(39, 38, 38);
+}
+
+.articles-recentPosts > div:first-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 92%;
+    /* background-color: rgb(247, 240, 240); */
+    height: 300px;
+  }
+
+
+  
+
+.articles-recentPosts > div:last-child{
+    /* background-color: green; */
+  /* border-bottom: solid 0.2px rgb(175, 175, 175); */
+}
+
+.articles-recentPosts > div > h3{
+    font-size: large;
+    font-weight: 500;
+    color: rgb(39, 38, 38);
+    height: 29px;
+    border-bottom: solid 0.2px rgb(175, 175, 175);
+}
+
+
+
+.view-all{
+    position:relative;
+    width: 100%;
+    height: 50px;
+    top: 770px;
+    
+}
+
+.view{
+    position: static;
+    border-radius:20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.view:hover{
+    background-color: rgb(43, 112, 168);
+    transition: 0.5s ease-in;
+}
+
+.popular-div{
+    position: relative;
+    width: 100%;
+    height: 470px;
+    top:800px;
+    font-size: large;
+    background-color: #F1F1F1;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.popular-div > div{
+    /* border: solid 1px black; */
+    padding: 10px;
+}
+
+
+.popular-div h5{
+    font-size: 22px;
+    width: 70%;
+    color: rgb(24, 24, 24);
+    margin: 10px auto;
+   text-align: left;
+}
+
+.topic-containers{
+  margin-top: -7px;
+}
+
+.topic-containers p{
+  width: 70%;
+  margin: 25px auto;
+  text-align: left;
+  font-weight: 600;
+  font-size: 17px;
+  color: rgb(59, 59, 59);
+}
+
+.popular-div > div:last-child h5{
+    text-align: center;
+}
+
+.topic-containers button{
+    display: block;
+    margin-top: 15px;
+}
+
+.social-handles{
+    padding: 5px;
+    width: 50%;
+    border: none;
+    font-size: large;
+    color: white;
+    top: 90px;
+    margin: auto;
+    font-weight: 600;
+    background-color: #0D52A1;
+}
+
+.topic-containers .read-more-button{
+   padding: 13px 10px;
+}
+
+.social-handles span{
+    position: relative;
+    bottom: 5px;
+}
+
+
+
+
+.footer-div{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 800px;
+    background-color: #0D52A1;
+}
+
+.footer-div h6{
+    position: relative;
+    width: 20%;
+    color: white;
+    margin: auto;
+    top: 15px;
+    font-size: medium;
 }
