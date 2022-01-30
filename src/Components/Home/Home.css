@@ -1,5 +1,5 @@
 .container{
-   height: 100vh;
+   height: 100%;
 }
 h1,h2,h3,h4,h5,h6{
     padding: 0;
@@ -303,3 +303,115 @@ Home page Image starts here */
     top: 15px;
     font-size: medium;
 }
+
+
+
+
+
+/* Responsive design starts  */
+
+@media (max-width: 480px) {
+    .container {
+      height: auto;
+    }
+
+    .header-container{
+        width: 100%;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .homepage-Image{
+        top: 0;
+    }
+
+    .homepage-Image-text{
+        width: 60%;
+    }
+
+    .homepage-Image-text h1{
+        position: relative;
+        top: 60px;
+        width: 100%;
+        font-weight: 400;
+        text-shadow: 5px;
+    }
+
+    .read-more-button{
+        font-weight: 400;
+    }
+
+
+    .articles-recentPosts{
+        display: block;
+        top: 50px;
+        padding: 10px;
+    }
+
+    .articles-recentPosts > div h3{
+        font-size: larger;
+        padding-bottom: 5px;
+    }
+
+    .articles-recentPosts > div:first-child{
+        height: auto;
+    }
+
+    .articles-recentPosts > div:last-child{
+        margin-top: 50px;
+    }
+    .articles-recentPosts > div:last-child h3{
+        border-bottom: none;
+    }
+
+    .update-div h4{
+        font-size: larger;
+        font-weight: 550;
+    }
+
+
+    .view-all {
+        position: relative;
+        top: 1400px;
+    }
+
+    .view-all  button{
+        font-weight: 600;
+    }
+
+    .topic-containers:nth-child(1){
+        position: relative;
+        top: 40px;
+    }
+
+    .social-handles{
+        width: 80%;
+    }
+
+
+
+
+
+
+    .popular-div{
+        top: 1500px;
+        grid-template-columns: repeat(2,1fr);
+        height: auto;
+        top:1450px;
+    }
+
+    .footer-div{
+        position: relative;
+        top: 1450px;
+        height: 50px;
+      
+    }
+
+    .footer-div h6{
+        top: 15px;
+        width: 100%;
+    }
+
+  }

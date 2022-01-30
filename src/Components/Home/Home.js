@@ -35,7 +35,7 @@ export default function Home() {
                    </div>
               <div  className="header-items">
                     
-                   <div>  
+                   <div className='hide'>  
                       <input className="search-input-field" placeholder="Search Post"/>
 
                       <button className="search-button"> Search</button>

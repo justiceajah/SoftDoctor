@@ -31,3 +31,58 @@
     border-bottom: solid 5px #2770C4;
      width: 43px;
 }
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+
+    .nav-bar{
+        position: relative;
+        top: 40px;
+        width: 100%;
+        margin: auto;
+    
+    }
+    .navbar-list{
+        position: relative;
+        z-index: 1;
+        display: block;
+        height: 300px;
+        width: 100%;
+        background-color: #0D52A1;
+        bottom: 40px;
+        border-top:  2px solid rgb(168, 165, 165) 
+     }
+
+    .navbar-list div{
+        padding-top: 10px;
+        margin: 10px;
+        height: 40px;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        border-bottom: solid 1px rgb(185, 185, 185);
+    }
+
+    .navbar-list div:hover{
+        background-color:  #3e71ac;
+    }
+
+
+    .navbar-list :first-child > a {
+        border: none;
+        align-items: center;
+        
+    }
+
+    .navbar-list div a{
+        padding: 10px;
+        color: white !important;
+    }
+
+    .hide{
+        /* display: none; */
+        
+    }
+    
+  }

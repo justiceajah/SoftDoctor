@@ -3,8 +3,8 @@ import "./Navbar.css"
 
 export default function Navbar() {
     return (
-        <div className='nav-bar'>
-             <div className='navbar-list'>
+        <div className='nav-bar hide'>
+             <div className='navbar-list '>
                 <div>
                     <a href=''>Home</a>
                 </div>
