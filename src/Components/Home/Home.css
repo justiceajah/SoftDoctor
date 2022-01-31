@@ -234,7 +234,7 @@ Home page Image starts here */
 
 
 .popular-div h5{
-    font-size: 22px;
+    font-size: 20px;
     width: 70%;
     color: rgb(24, 24, 24);
     margin: 10px auto;
@@ -319,6 +319,19 @@ Home page Image starts here */
     .header-container{
         width: 100%;
     }
+
+
+    .small-device{
+        color: white;
+        height: 1.5em;
+        margin-left: 55px;
+        cursor: pointer;
+    }
+
+    .logo-div {
+        margin-left: 7px;
+      }
+
 
     .hide{
         display: none;
@@ -431,4 +444,113 @@ Home page Image starts here */
         font-weight: 600;
 
     }
+    .popular-div h5 {
+        font-size: 18px;
+      }
+      .topic-containers .read-more-button{
+        padding: 3px 10px;
+        font-weight: 600;
+     }
   }
+
+
+/* Tablets and IPads */
+@media (min-width:481px) and (max-width:768px){
+   .hide{
+       display: none;
+   }
+   .homepage-Image {
+    top: 0px;
+   
+  }
+
+  .homepage-Image-text {
+    width: 70%;
+  }
+
+  .articles-recentPosts{
+    display: block;
+    top: 50px;
+    padding: 10px;
+}
+
+.articles-recentPosts > div h3{
+    font-size: larger;
+    padding-bottom: 5px;
+}
+
+.articles-recentPosts > div:first-child{
+    height: auto;
+}
+
+.articles-recentPosts > div:last-child{
+    margin-top: 50px;
+}
+.articles-recentPosts > div:last-child h3{
+    border-bottom: none;
+}
+
+.update-div h4{
+    font-size: larger;
+    font-weight: 550;
+}
+
+
+.view-all {
+    position: relative;
+    top: 1400px;
+}
+
+.view-all  button{
+    font-weight: 600;
+}
+
+.topic-containers:nth-child(1){
+    position: relative;
+    top: 40px;
+}
+
+.social-handles{
+    width: 80%;
+}
+
+
+
+
+
+
+.popular-div{
+    top: 1500px;
+    grid-template-columns: repeat(2,1fr);
+    height: auto;
+    top:1450px;
+}
+
+.footer-div{
+    position: relative;
+    top: 1450px;
+    height: 50px;
+  
+}
+
+.footer-div h6{
+    top: 15px;
+    width: 100%;
+}
+
+
+
+}
+
+
+/* Laptops and other smaller screens */
+
+@media (min-width:769px) and (max-width:1024px){
+
+}
+
+/* Desktop and other large screens */
+@media (min-width:1025px) and (max-width:1200px){
+
+
+}

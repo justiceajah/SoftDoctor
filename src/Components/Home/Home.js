@@ -8,8 +8,26 @@ import Post from '../Post/Post';
 import FuturePost from '../Post/FuturePost';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Home() {
+
+    // setting the state of our Navigation bar
+    const [state,setState] = React.useState({
+        showNav : false
+    });
+
+    const toggleNavbar = ()=> (event)=>{
+ 
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+            return;
+          }
+
+          setState({...state, showNav: !state.showNav},
+            console.log(state.showNav)
+            )
+    }
+
     return (
         <div className="container">
              {/* <Button variant="contained"> Hello World </Button> */}
@@ -34,7 +52,9 @@ export default function Home() {
 
                    </div>
               <div  className="header-items">
-                    
+                    <div className='small-device-div'>
+                        <MenuIcon fontSize='large'  onClick={toggleNavbar()} className='small-device'/>
+                    </div>
                    <div className='hide'>  
                       <input className="search-input-field" placeholder="Search Post"/>
 
@@ -45,7 +65,9 @@ export default function Home() {
               </div>
 
 
-              <Navbar/>
+              <Navbar 
+                  navState= {state.showNav}
+              />
 
               <div className='homepage-Image'>
                    

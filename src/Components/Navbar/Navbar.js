@@ -1,24 +1,26 @@
+import { Link } from '@mui/material'
 import React from 'react'
 import "./Navbar.css"
 
-export default function Navbar() {
+export default function Navbar(props) {
+    console.log(props.navState);
     return (
-        <div className='nav-bar hide'>
-             <div className='navbar-list '>
+        <div className={`nav-bar ${props.navState ? '': 'hide'}`}>
+             <div className='navbar-list'>
                 <div>
-                    <a href=''>Home</a>
+                    <Link href=''>Home</Link>
                 </div>
                 <div>
-                     <a href=''>Articles</a>
+                     <Link href=''>Articles</Link>
                 </div>
                 <div>
-                        <a href=''>Videos</a>
+                        <Link href=''>Videos</Link>
                 </div>
                 <div>
-                   <a href=''>  Contact us</a>
+                   <Link href=''>  Contact us</Link>
                 </div>
                 <div>
-                    <a href=''>About</a>
+                    <Link href=''>About</Link>
                 </div>
              </div>
         </div>
