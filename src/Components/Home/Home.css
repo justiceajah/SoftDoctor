@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6{
 
 .header-items{
     /* border: solid 1px black; */
-    width: 60%;
+    /* width: 60%; */
     
 }
 
@@ -435,9 +435,15 @@ Home page Image starts here */
   /* Smaller mobiles */
 
   @media (max-width:453px){
+
+    .App {
+        text-align: center;
+        width: 110%;
+    }
     .homepage-Image-text {
         width: 80%;
       }
+
         
     .homepage-Image-text h1 {
         width: 100%;
