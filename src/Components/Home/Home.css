@@ -310,6 +310,7 @@ Home page Image starts here */
 
 /* Responsive design starts  */
 
+/* Mobile */
 @media (max-width: 480px) {
     .container {
       height: auto;
@@ -328,14 +329,14 @@ Home page Image starts here */
     }
 
     .homepage-Image-text{
-        width: 60%;
+        width: 80%;
     }
 
     .homepage-Image-text h1{
         position: relative;
         top: 60px;
         width: 100%;
-        font-weight: 400;
+        font-weight: 550;
         text-shadow: 5px;
     }
 
@@ -414,4 +415,20 @@ Home page Image starts here */
         width: 100%;
     }
 
+  }
+
+
+
+  /* Smaller mobiles */
+
+  @media (max-width:453px){
+    .homepage-Image-text {
+        width: 80%;
+      }
+        
+    .homepage-Image-text h1 {
+        width: 100%;
+        font-weight: 600;
+
+    }
   }
